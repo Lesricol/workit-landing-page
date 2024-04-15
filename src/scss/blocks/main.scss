@@ -1,0 +1,110 @@
+@use '../mixins/responsive.scss' as *;
+
+.main{
+    padding: 0 16px;
+    @include responsive(tablet){
+        padding: 0 40px;
+    }
+    @include responsive(desktop){
+        padding: 0 161px 0 163px;
+    }
+}
+
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+    margin-bottom: 172px;
+    @include responsive(tablet){
+        gap: 3rem;
+    }
+    @include responsive(desktop){
+        flex-direction: row;
+        width: 1114px;
+        gap: 1.25rem;
+    }
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    
+
+    &__number{
+        font-family: "Fraunces", serif;
+        font-size: 1.25rem;
+        line-height: 36px;
+        text-align: center;
+        width: 48px;
+        height: 46px;
+        padding: 5px 16px;
+        border-radius: 50%;
+        border: 1px solid #584D62;
+        margin-bottom: 8px;
+        @include responsive(desktop){
+            font-size: 1.5rem;
+        }
+    }
+
+    @include responsive(tablet){
+        flex-direction: row;
+        gap: 2rem;
+        text-align: left;
+        width: 573px;
+    }
+    
+    @include responsive(desktop){
+        flex-direction: column;
+        text-align: center;
+        width: 354px;
+        height: 308px;
+        gap: 3.5rem;
+    }
+}
+
+.opinion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include responsive(tablet){
+        align-items: normal;
+    }
+    @include responsive(desktop){
+        position: relative;
+        top: -170px;
+    }
+}
+
+.opinion-card{
+    background-color: #24053E ;
+    padding: 32px 31px;
+    text-align: center;
+    margin-bottom: 74px;
+    @include responsive(tablet){
+        width: 514px;
+        margin-left: auto;
+        text-align: left;
+    }
+    @include responsive(desktop){
+        width: 730px;
+        padding: 64px;
+    }
+}
+
+.image-opinion{
+    position: relative;
+    width: 281px;
+    top: 60px;
+    z-index: -1;
+    @include responsive(tablet){
+        top: 130px;
+    }
+    @include responsive(desktop){
+        width: 477px;
+        top: 300px;
+    }
+}

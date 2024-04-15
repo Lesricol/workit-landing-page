@@ -1,1 +1,16 @@
+@use '../mixins/responsive.scss' as *;
+.text{
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    @include responsive(desktop){
+        font-size: 1.125rem;
+        line-height: 32px;
+    }
+}
 
+.text--white{
+    color: white;
+    margin-bottom: 24px;
+}

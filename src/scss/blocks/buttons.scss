@@ -1,0 +1,17 @@
+.button{
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 32px;
+    letter-spacing: -0.16px;
+}
+
+.button--border{
+    padding-bottom: 2px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.button--green{
+    padding: 11px 24px 12 23px;
+    background-color: var(--primary-color);
+    color: #24053E;
+}
