@@ -18,6 +18,9 @@
   @include responsive(desktop) {
     padding: 56px 165px 0;
     margin-bottom: 300px;
+    background-image: url(../../assets/images/bg-pattern-1.svg), url(../../assets/images/bg-pattern-2.svg);
+    background-repeat: no-repeat;
+    background-position: -220px 100px, 1350px 350px;
   }
 }
 .top-bar {

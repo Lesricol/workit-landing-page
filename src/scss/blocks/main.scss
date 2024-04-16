@@ -4,9 +4,7 @@
   padding: 0 16px;
   @include responsive(tablet) {
     padding: 0 40px;
-    background-image: url(../../assets/images/bg-pattern-3.svg);
-    background-repeat: no-repeat;
-    background-position: 400px 800px;
+    
   }
   @include responsive(desktop) {
     padding: 0 161px 0 163px;
@@ -92,6 +90,7 @@
     text-align: left;
   }
   @include responsive(desktop) {
+    position: relative;
     width: 730px;
     padding: 64px;
   }
@@ -103,10 +102,34 @@
   top: 60px;
   z-index: -1;
   @include responsive(tablet) {
+    position: relative;
     top: 130px;
   }
   @include responsive(desktop) {
     width: 477px;
     top: 300px;
   }
+}
+
+.box{
+    @include responsive(tablet) {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-image: url(../../assets/images/bg-pattern-3.svg);
+        background-repeat: no-repeat;
+        bottom: -1480px;
+        right: 50px;
+        z-index: 1;
+    }
+    @include responsive(desktop) {
+        position: absolute;
+        width: 250px;
+        height: 250px;
+        background-image: url(../../assets/images/bg-pattern-3.svg);
+        background-repeat: no-repeat;
+        bottom: -50px;
+        right: 50px;
+        z-index: 1;
+    }
 }
